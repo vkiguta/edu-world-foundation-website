@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact Us|Education World Foundation</title>
-    <meta name="keywords" content="HTML5,CSS3,HTML,Template,Multi-Purpose,M_Adnan,Corporate Theme,Social | Social Welfare - Charity & Non-Profit HTML5 Template" >
-    <meta name="description" content="Social Welfare - Charity & Non-Profit HTML5 Template">
+<title>Contact Us |Education World Foundation</title>
+    <meta name="keywords" content="HTML5,CSS3,HTML,Template,Multi-Purpose,M_Adnan,Corporate Theme,Social | EWF - Kenyan Non-profit working on sustainable development projects" >
+    <meta name="description" content="EWF - Kenyan Non-profit working on sustainable development projects">
     <meta name="author" content="M_Adnan">
     
     <!-- FAVICON -->
@@ -20,12 +20,13 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     
     <!--MAIN STYLE-->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/animate.css" rel="stylesheet" type="text/css">
-    <link href="css/responsive.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,10 +50,10 @@
       </ul>
       <ul class="right-bar-side social_icons">
         <li class="padding-r-20">
-          <p class="font-lora">Phone: (01) 800 433 633</p>
+          <p class="font-lora">Phone: +2547 157 097 50,  +2547 227 839 46</p>
         </li>
         <li>
-          <p class="font-lora">Mail: Info@edu-worldfoundation.org</p>
+          <p class="font-lora">Mail: Info@educationworldfoundation.org</p>
         </li>
       </ul>
     </div>
@@ -109,14 +110,14 @@
     <!--======= CONTACT US =========-->
     <section class="contact-us">
       <div class="container">
-        <div id="map" class="g_map"></div>
+        
         <div class="row"> 
           
           <!--======= CONTACT FORM =========-->
-          <div class="col-md-7">
+          <div class="col-md-7" data-aos="zoom-in">
             <h5>Leave a message!</h5>
             <div id="contact_message" class="success-msg"> <i class="fa fa-paper-plane-o"></i>Thank You. Your Message has been Submitted</div>
-            <form role="form" id="contact_form" class="contact-form" action="POST" data-netlify="true">
+            <form role="form" id="contact_form" class="contact-form" method="post" onSubmit="return false">
               <ul class="row">
                 <li class="col-sm-6">
                   <label>full name *
@@ -128,19 +129,19 @@
                     <input type="text" class="form-control" name="email" id="email" placeholder="">
                   </label>
                 </li>
+                <li class="col-sm-6">
+                  <label>Phone *
+                    <input type="text" class="form-control" name="company" id="company" placeholder="">
+                  </label>
+                </li>
+                
                 <li class="col-sm-12">
                   <label>write something
                     <textarea class="form-control" name="message" id="message" rows="5" placeholder=""></textarea>
                   </label>
                 </li>
                 <li class="col-sm-12">
-                  <label>Spam - Filter
-                    <div class="spam-fliter" data-netlify-recaptcha="true"></div>
-                  </label>
-                </li>
-
-                <li class="col-sm-12">
-                  <button type="submit" value="submit" class="btn" id="btn_submit">Send Message</button>
+                  <button type="submit" value="submit" class="btn" id="btn_submit" onClick="proceed();">Send Message</button>
                 </li>
               </ul>
             </form>
@@ -148,7 +149,7 @@
           
           <!--======= CONTACT INFORMATION =========-->
           <div class="col-md-5">
-            <div class="contact-info">
+            <div class="contact-info" data-aos="zoom-in">
               <h5>Contact Details</h5>
               <ul>
                 
@@ -160,7 +161,7 @@
                     </div>
                     <div class="col-xs-10">
                       <h6>Address</h6>
-                      <p>Westlands, Waumini House, 3d floor</p>
+                      <p>1283-20300, Nyahururu, Kenya.</p>
                       <hr>
                     </div>
                   </div>
@@ -174,8 +175,8 @@
                     </div>
                     <div class="col-xs-10">
                       <h6>Phone</h6>
-                      <p>01 (800) 433 744</p>
-                      <p>01 (800) 433 633</p>
+                      <p>+2547 157 097 50</p>
+                      <p>+2547 227 839 46</p>
                       <hr>
                     </div>
                   </div>
@@ -189,7 +190,7 @@
                     </div>
                     <div class="col-xs-10">
                       <h6>Support</h6>
-                      <p>info@edu-worldfoundation.org</p>
+                      <p>info@educationworldfoundation.org</p>
                       <hr>
                     </div>
                   </div>
@@ -198,6 +199,9 @@
             </div>
           </div>
         </div>
+
+        <div id="map" class="g_map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.3636364618251!2d36.31325103042393!3d-0.015012338522676647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1829df0b69bca429%3A0x20fd2c9b81af4507!2sGathanje%20Primary%20School!5e0!3m2!1sen!2ske!4v1657442024567!5m2!1sen!2ske" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
       </div>
     </section>
   </div>
@@ -205,7 +209,7 @@
   
   <!--======= FOOTER =========-->
   <footer>
-    <div class="container"> 
+    <div class="container" data-aos="zoom-in"> 
       
       <!--======= FOOTER ROW =========-->
       <div class="row">
@@ -226,9 +230,9 @@
               
               <!--======= ADDRESS =========-->
               <h6>Find us at</h6>
-              <p>Address : Westlands, Waumini House, 3d floor</p>
-              <p>Phone : (01) 800 433 633</p>
-              <p>Email : info@edu-worldfoundation.org</p>
+              <p>Address : 1283-20300, Nyahururu, Kenya.</p>
+              <p>Phone : +2547 157 097 50,  +2547 227 839 46</p>
+              <p>Email : info@educationworldfoundation.org</p>
               <div class="subcribe">
                 <form>
                   <input type="text" placeholder="Email Address" required>
@@ -258,10 +262,8 @@
             <li class="col-sm-6">
               <div class="tweet">
                 <h6>Latest Tweets</h6>
-                <p>Eaque ipsa quae ab illo inventore veris 
-                  quasi architecto beatae vitae dicta exp
-                  enim ipsam voluptatem.</p>
-                <a href="#.">http://twitter.com/EducationWorldFoundation</a> <span><i class="fa fa-twitter-square"></i> 3.00 PM, 24 May 2015</span> </div>
+                <p>Join us in August, as we celebrate the graduation of our #2022class!!</p>
+                <a href="#.">http://twitter.com/EducationWorldFoundation</a> <span><i class="fa fa-twitter-square"></i> 3.33 PM, 24 June 2022</span> </div>
             </li>
             
             <!--======= DONATION =========-->
@@ -272,7 +274,7 @@
                 <li><a href="#.">Donation List</a></li>
                 <li><a href="#.">Recent Causes</a></li>
                 <li><a href="#.">FAQ</a></li>
-                <li><a href="#." class="btn">Donate now!</a></li>
+                <li><a href="20-Contact.html" class="btn">Donate now!</a></li>
               </ul>
             </li>
           </ul>
@@ -283,7 +285,8 @@
     
     <!--======= RIGHTS =========-->
     <div class="rights">
-      <p class="text-uppercase">Copyright © 2022 Mwaniki Kiguta. All Rights Reserved.</p>
+      <p class="text-uppercase">Copyright © 2022 <a href="https://mwanikikiguta.com/">Mwaniki Kiguta.</a>  All Rights Reserved.</p>
+
     </div>
   </footer>
 
@@ -399,6 +402,10 @@
   </div>
   <!--======= BECOME A volunteer END =========--> 
 </div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="js/jquery-1.11.0.min.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/own-menu.js"></script> 
@@ -411,36 +418,7 @@
 <script src="js/jquery.magnific-popup.min.js"></script> 
 <script src="js/jquery.downCount.js"></script> 
 <script src="js/main.js"></script> 
-<script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=false'></script> 
-<!-- begin map script--> 
-<script type="text/javascript">
-/*==========  Map  ==========*/
-var map;
-function initialize_map() {
-if ($('#map').length) {
-	var myLatLng = new google.maps.LatLng(-37.814199, 144.961560);
-	var mapOptions = {
-		zoom: 16,
-		center: myLatLng,
-		scrollwheel: false,
-		panControl: false,
-		zoomControl: true,
-		scaleControl: false,
-		mapTypeControl: false,
-		streetViewControl: false
-	};
-	map = new google.maps.Map(document.getElementById('map'), mapOptions);
-	var marker = new google.maps.Marker({
-		position: myLatLng,
-		map: map,
-		title: 'Envato',
-		icon: './images/map-locator-c.png'
-	});
-} else {
-	return false;
-}
-}
-google.maps.event.addDomListener(window, 'load', initialize_map);
-</script>
+
+
 </body>
 </html>
